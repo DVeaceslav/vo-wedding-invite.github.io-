@@ -268,15 +268,6 @@ section.animate {
     position: relative;
 }
 
-.invitation-section::before {
-    content: '"';
-    font-family: "Playfair Display", serif;
-    font-size: 8rem;
-    color: var(--gold-light);
-    opacity: 0.3;
-    position: absolute;
-    top: 2rem;
-    left: 50%;
     transform: translateX(-50%);
     line-height: 1;
 }
