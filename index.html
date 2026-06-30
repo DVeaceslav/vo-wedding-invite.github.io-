@@ -25,9 +25,9 @@
         </nav>
 
         <!-- СЕКЦИЯ 1: ИМЕНА МОЛОДОЖЁНОВ -->
-        <section class="hero visible" id="hero">
+        <section class="hero animate" id="hero">
             <p class="save-date">Save the Date</p>
-            <div class="ornament">✦ ✦ ✦</div>
+            <div class="ornament" aria-hidden="true">✦ ✦ ✦</div>
             <h1 class="names">Вячеслав</h1>
             <span class="ampersand">&amp;</span>
             <h1 class="names">Олеся</h1>
@@ -43,7 +43,7 @@
             <p class="section-subtitle">Отсчёт до торжества</p>
             <h2>Осталось совсем немного</h2>
             <div class="divider"></div>
-            <div class="timer">
+            <div class="timer" role="timer" aria-live="polite">
                 <div class="timer-block">
                     <span class="number" id="days">00</span>
                     <span class="label">Дней</span>
@@ -96,7 +96,7 @@
             <div class="divider"></div>
             <div class="venue-cards">
                 <div class="venue-card">
-                    <div class="icon">⛪</div>
+                    <div class="icon" aria-hidden="true">⛪</div>
                     <h3>Церемония бракосочетания</h3>
                     <p class="venue-type">Церемония</p>
                     <p>
@@ -106,7 +106,7 @@
                     <p class="time">15:30</p>
                 </div>
                 <div class="venue-card">
-                    <div class="icon">🥂</div>
+                    <div class="icon" aria-hidden="true">🥂</div>
                     <h3>Банкет и праздник</h3>
                     <p class="venue-type">Торжество</p>
                     <p>
@@ -120,6 +120,7 @@
             <div class="map-container">
                 <div class="map-wrapper">
                     <iframe
+                        title="Карта — место проведения"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.853864051016!2d28.8586191!3d47.00195285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c02870369fd%3A0x184df674088eafc8!2zQnVsZXZhcmR1bCBEZWNlYmFsIDE2LCBDaGnImWluxIN1LCDQnNC-0LvQtNC-0LLQsA!5e1!3m2!1sru!2s!4v1782811152259!5m2!1sru!2s"
                         width="100%"
                         height="100%"
@@ -130,7 +131,7 @@
                     ></iframe>
                 </div>
                 <div class="map-info">
-                    <div class="map-pin">📍</div>
+                    <div class="map-pin" aria-hidden="true">📍</div>
                     <div class="map-text">
                         <p class="map-address">Бульвар Дечебал, 16, Кишинёв</p>
                     </div>
@@ -145,7 +146,7 @@
             <div class="divider"></div>
             <div class="details-grid">
                 <div class="detail-item">
-                    <div class="detail-icon">👗</div>
+                    <div class="detail-icon" aria-hidden="true">👗</div>
                     <h3>Дресс-код</h3>
                     <p>
                         Cocktail / Semi-formal. Мы будем рады видеть вас в
@@ -153,7 +154,7 @@
                     </p>
                 </div>
                 <div class="detail-item">
-                    <div class="detail-icon">🎁</div>
+                    <div class="detail-icon" aria-hidden="true">🎁</div>
                     <h3>Подарки</h3>
                     <p>
                         Лучший подарок — это ваше присутствие. Но если хочется
@@ -161,7 +162,7 @@
                     </p>
                 </div>
                 <div class="detail-item">
-                    <div class="detail-icon">📸</div>
+                    <div class="detail-icon" aria-hidden="true">📸</div>
                     <h3>Фотографии</h3>
                     <p>
                         Профессиональная съёмка будет на протяжении всего дня.
@@ -173,7 +174,13 @@
 
         <!-- ФУТЕР -->
         <footer class="footer">
-            <div class="ornament" style="margin-bottom: 1rem">✦</div>
+            <div
+                class="ornament"
+                style="margin-bottom: 1rem"
+                aria-hidden="true"
+            >
+                ✦
+            </div>
             <p class="names-footer">Вячеслав &amp; Олеся</p>
             <p>7 Ноября 2026 · Кишинев</p>
         </footer>
