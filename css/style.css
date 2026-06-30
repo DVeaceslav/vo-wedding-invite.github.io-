@@ -268,10 +268,6 @@ section.animate {
     position: relative;
 }
 
-    transform: translateX(-50%);
-    line-height: 1;
-}
-
 .invitation-section .section-subtitle {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
@@ -401,7 +397,7 @@ section.animate {
 }
 
 .map-container {
-    max-width: 800px;
+    max-width: 830px;
     margin: 2rem auto;
     border-radius: 16px;
     overflow: hidden;
@@ -417,27 +413,6 @@ section.animate {
 
 .map-wrapper iframe {
     display: block;
-}
-
-.map-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 24px;
-    background: linear-gradient(135deg, var(--gold-light), var(--blush));
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.map-pin {
-    font-size: 1.6rem;
-    flex-shrink: 0;
-}
-
-.map-address {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1a1a1a;
 }
 
 /* ===== СЕКЦИЯ 5: ДОПОЛНИТЕЛЬНЫЕ МОМЕНТЫ ===== */
