@@ -78,6 +78,7 @@ navDots.forEach((dot) => {
 
 const sectionIds = ["hero", "countdown", "invitation", "venue", "details"];
 
+// Навигация (ваш существующий код)
 const navObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -89,12 +90,26 @@ const navObserver = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.4,
+  { threshold: 0.4 },
+);
+
+const animObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+      } else {
+        entry.target.classList.remove("animate");
+      }
+    });
   },
+  { threshold: 0.2 },
 );
 
 sectionIds.forEach((id) => {
   const el = document.getElementById(id);
-  if (el) navObserver.observe(el);
+  if (el) {
+    navObserver.observe(el);
+    animObserver.observe(el);
+  }
 });
