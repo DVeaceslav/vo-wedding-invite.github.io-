@@ -1,1 +1,3 @@
-# vo-wedding-invite.github.io-
+# Wedding Invitation
+
+Одностраничный сайт-приглашение на свадьбу.

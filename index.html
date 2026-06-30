@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Свадебное Приглашение — Вячеслав & Олеся</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&family=Great+Vibes&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Навигация точками -->
+        <nav class="nav-dots" aria-label="Навигация по секциям">
+            <div class="nav-dot active" data-target="hero" title="Начало"></div>
+            <div class="nav-dot" data-target="countdown" title="Таймер"></div>
+            <div
+                class="nav-dot"
+                data-target="invitation"
+                title="Приглашение"
+            ></div>
+            <div class="nav-dot" data-target="venue" title="Место"></div>
+            <div class="nav-dot" data-target="details" title="Детали"></div>
+        </nav>
+
+        <!-- СЕКЦИЯ 1: ИМЕНА МОЛОДОЖЁНОВ -->
+        <section class="hero visible" id="hero">
+            <p class="save-date">Save the Date</p>
+            <div class="ornament">✦ ✦ ✦</div>
+            <h1 class="names">Вячеслав</h1>
+            <span class="ampersand">&amp;</span>
+            <h1 class="names">Олеся</h1>
+            <div class="divider"></div>
+            <p class="wedding-date">7 · Ноября · 2026</p>
+            <div class="scroll-hint">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ 2: ТАЙМЕР -->
+        <section class="countdown-section" id="countdown">
+            <p class="section-subtitle">Отсчёт до торжества</p>
+            <h2>Осталось совсем немного</h2>
+            <div class="divider"></div>
+            <div class="timer">
+                <div class="timer-block">
+                    <span class="number" id="days">00</span>
+                    <span class="label">Дней</span>
+                </div>
+                <span class="timer-separator">:</span>
+                <div class="timer-block">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Часов</span>
+                </div>
+                <span class="timer-separator">:</span>
+                <div class="timer-block">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Минут</span>
+                </div>
+                <span class="timer-separator">:</span>
+                <div class="timer-block">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">Секунд</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ 3: ПРИГЛАШЕНИЕ -->
+        <section class="invitation-section" id="invitation">
+            <p class="section-subtitle">Приглашение</p>
+            <h2>Дорогие наши!</h2>
+            <div class="divider"></div>
+            <div class="invitation-text">
+                <p>
+                    В нашей жизни наступает волшебный момент, который мы хотим
+                    разделить именно с вами — самыми близкими и дорогими людьми.
+                </p>
+                <p>
+                    Мы приглашаем вас стать свидетелями начала нашей семейной
+                    истории, разделить с нами радость этого незабываемого дня,
+                    наполненного любовью, счастьем и искренними улыбками.
+                </p>
+                <p>
+                    Ваше присутствие — самый ценный подарок для нас. Будем с
+                    нетерпением ждать встречи!
+                </p>
+                <div class="invitation-signature">
+                    С любовью, Вячеслав и Олеся
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ 4: МЕСТО ПРОВЕДЕНИЯ -->
+        <section class="venue-section" id="venue">
+            <p class="section-subtitle">Где и когда</p>
+            <h2>Место проведения</h2>
+            <div class="divider"></div>
+            <div class="venue-cards">
+                <div class="venue-card">
+                    <div class="icon">⛪</div>
+                    <h3>Церемония бракосочетания</h3>
+                    <p class="venue-type">Церемония</p>
+                    <p>
+                        Ресторан «Villa Garden»<br />Бульвар Дечебал, 16, 52,<br />
+                        Кишинев
+                    </p>
+                    <p class="time">15:30</p>
+                </div>
+                <div class="venue-card">
+                    <div class="icon">🥂</div>
+                    <h3>Банкет и праздник</h3>
+                    <p class="venue-type">Торжество</p>
+                    <p>
+                        Ресторан «Villa Garden»<br />Бульвар Дечебал, 16, 52,<br />
+                        Кишинев
+                    </p>
+                    <p class="time">17:00</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.853864051016!2d28.8586191!3d47.00195285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c02870369fd%3A0x184df674088eafc8!2zQnVsZXZhcmR1bCBEZWNlYmFsIDE2LCBDaGnImWluxIN1LCDQnNC-0LvQtNC-0LLQsA!5e1!3m2!1sru!2s!4v1782811152259!5m2!1sru!2s"
+                        width="100%"
+                        height="100%"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                </div>
+                <div class="map-info">
+                    <div class="map-pin">📍</div>
+                    <div class="map-text">
+                        <p class="map-address">Бульвар Дечебал, 16, Кишинёв</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ 5: ДОПОЛНИТЕЛЬНЫЕ МОМЕНТЫ -->
+        <section class="details-section" id="details">
+            <p class="section-subtitle">Важные детали</p>
+            <h2>Дополнительные моменты</h2>
+            <div class="divider"></div>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon">👗</div>
+                    <h3>Дресс-код</h3>
+                    <p>
+                        Cocktail / Semi-formal. Мы будем рады видеть вас в
+                        нарядах пастельных оттенков.
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🎁</div>
+                    <h3>Подарки</h3>
+                    <p>
+                        Лучший подарок — это ваше присутствие. Но если хочется
+                        порадовать — мы предпочтём конверт.
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">📸</div>
+                    <h3>Фотографии</h3>
+                    <p>
+                        Профессиональная съёмка будет на протяжении всего дня.
+                        Ваши кадры тоже приветствуются!
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🍽️</div>
+                    <h3>Меню</h3>
+                    <p>
+                        Фуршет, основной банкет и сладкий стол. Если у вас есть
+                        аллергия — сообщите нам заранее.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ФУТЕР -->
+        <footer class="footer">
+            <div class="ornament" style="margin-bottom: 1rem">✦</div>
+            <p class="names-footer">Вячеслав &amp; Олеся</p>
+            <p>7 Ноября 2026 · Кишинев</p>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
