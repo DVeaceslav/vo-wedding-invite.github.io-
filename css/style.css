@@ -115,13 +115,7 @@ section.animate {
     left: -100px;
 }
 
-.hero .save-date {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    font-size: 0.9rem;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
-    color: var(--gold);
+.hero .ornament {
     margin-bottom: 2rem;
 }
 
@@ -184,7 +178,60 @@ section.animate {
     }
 }
 
-/* ===== СЕКЦИЯ 2: ТАЙМЕР ===== */
+/* ===== СЕКЦИЯ 2: ПРИГЛАШЕНИЕ ===== */
+.invitation-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+    text-align: center;
+    background: var(--cream);
+    position: relative;
+    height: 100%;
+}
+
+.invitation-section .section-subtitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.invitation-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 2rem;
+}
+
+.invitation-text {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 2;
+    color: var(--text);
+}
+
+.invitation-text p {
+    margin-bottom: 1.5rem;
+}
+
+.invitation-signature {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-top: 2rem;
+}
+
+/* ===== СЕКЦИЯ 3: ТАЙМЕР ===== */
 .countdown-section {
     background: var(--dark);
     color: var(--white);
@@ -258,53 +305,6 @@ section.animate {
     align-self: flex-start;
     margin-top: 0.3rem;
     opacity: 0.4;
-}
-
-/* ===== СЕКЦИЯ 3: ПРИГЛАШЕНИЕ ===== */
-.invitation-section {
-    padding: 6rem 2rem;
-    text-align: center;
-    background: var(--cream);
-    position: relative;
-}
-
-.invitation-section .section-subtitle {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    font-size: 0.85rem;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1rem;
-}
-
-.invitation-section h2 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: 400;
-    color: var(--dark);
-    margin-bottom: 2rem;
-}
-
-.invitation-text {
-    max-width: 650px;
-    margin: 0 auto;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.05rem;
-    font-weight: 300;
-    line-height: 2;
-    color: var(--text);
-}
-
-.invitation-text p {
-    margin-bottom: 1.5rem;
-}
-
-.invitation-signature {
-    font-family: "Great Vibes", cursive;
-    font-size: 1.8rem;
-    color: var(--gold);
-    margin-top: 2rem;
 }
 
 /* ===== СЕКЦИЯ 4: МЕСТО ===== */

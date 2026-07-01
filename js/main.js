@@ -50,7 +50,7 @@ navDots.forEach((dot) => {
   });
 });
 
-const sectionIds = ["hero", "countdown", "invitation", "venue", "details"];
+const sectionIds = ["hero", "invitation", "countdown", "venue", "details"];
 
 const navObserver = new IntersectionObserver(
   (entries) => {
