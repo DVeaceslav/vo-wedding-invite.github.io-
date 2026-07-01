@@ -416,6 +416,82 @@ section.animate {
     display: block;
 }
 
+.map-info {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    background: linear-gradient(to left, var(--cream), var(--blush));
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Material Design filled button */
+.map-route {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--gold);
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow:
+        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition:
+        background 0.2s ease,
+        box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-route::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.map-route:hover {
+    box-shadow:
+        0 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.map-route:hover::after {
+    opacity: 0.08;
+}
+
+.map-route:active::after {
+    opacity: 0.16;
+}
+
+.map-route:focus-visible {
+    outline: none;
+    box-shadow:
+        0 0 0 3px rgba(201, 168, 76, 0.4),
+        0 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0 4px 5px 0 rgba(0, 0, 0, 0.14);
+}
+
+.map-route-icon {
+    flex-shrink: 0;
+}
+
+.map-route-label {
+    line-height: 1;
+}
+
 /* ===== СЕКЦИЯ 5: ДОПОЛНИТЕЛЬНЫЕ МОМЕНТЫ ===== */
 .details-section {
     padding: 6rem 2rem;
