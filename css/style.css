@@ -560,14 +560,17 @@ section.animate {
 }
 
 .palette {
-    list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 14px;
+    list-style: none;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     padding: 0;
+    width: calc(34px * 4 + 14px * 3);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .palette-dot {
