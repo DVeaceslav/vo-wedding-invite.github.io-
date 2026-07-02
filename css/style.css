@@ -590,6 +590,221 @@ section.animate {
     border: 0;
 }
 
+/* ===== СЕКЦИЯ 6: RSVP ===== */
+.rsvp-section {
+    padding: 6rem 2rem;
+    background: var(--blush);
+    text-align: center;
+}
+
+.rsvp-section .section-subtitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.rsvp-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.rsvp-intro {
+    max-width: 520px;
+    margin: 0 auto 2.5rem;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.rsvp-form {
+    max-width: 750px;
+    min-width: 300px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.rsvp-field {
+    margin-bottom: 1.75rem;
+    border: none;
+}
+
+.rsvp-field label,
+.rsvp-field legend {
+    display: flex;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 0.6rem;
+}
+
+.rsvp-optional {
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: var(--gold);
+    margin-left: 3px;
+}
+
+.rsvp-field input[type="text"],
+.rsvp-field textarea {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text);
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--gold-light);
+    border-radius: 6px;
+    background: var(--cream);
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    resize: vertical;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+.rsvp-field input[type="text"]:focus,
+.rsvp-field textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.18);
+}
+
+.rsvp-choice {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.rsvp-radio {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.5rem 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--text);
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+.rsvp-radio input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.rsvp-radio input[type="radio"]:hover {
+    transform: scale(1.1);
+}
+
+.rsvp-radio span {
+    line-height: 1.4;
+}
+
+.rsvp-comment {
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+.rsvp-field.invalid input[type="text"],
+.rsvp-field.invalid textarea {
+    border-color: #c0392b;
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12);
+}
+
+.rsvp-field.invalid legend,
+.rsvp-field.invalid label {
+    color: #c0392b;
+}
+
+.rsvp-submit {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    background: var(--gold);
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow:
+        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition:
+        background 0.2s ease,
+        box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.2s ease;
+}
+
+.rsvp-submit:hover:not(:disabled) {
+    box-shadow:
+        0 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rsvp-submit:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.4);
+}
+
+.rsvp-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.rsvp-status {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    min-height: 1.2em;
+}
+
+.rsvp-status.success {
+    color: #2e7d32;
+}
+
+.rsvp-status.error {
+    color: #c0392b;
+}
+
+.rsvp-form.sent .rsvp-field,
+.rsvp-form.sent .rsvp-submit {
+    display: none;
+}
+
 /* ===== ФУТЕР ===== */
 .footer {
     background: var(--dark);

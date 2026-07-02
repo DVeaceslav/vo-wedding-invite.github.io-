@@ -22,6 +22,7 @@
             <div class="nav-dot" data-target="countdown" title="Таймер"></div>
             <div class="nav-dot" data-target="venue" title="Место"></div>
             <div class="nav-dot" data-target="details" title="Детали"></div>
+            <div class="nav-dot" data-target="rsvp" title="Присутствие"></div>
         </nav>
 
         <!-- СЕКЦИЯ 1: ИМЕНА МОЛОДОЖЁНОВ -->
@@ -249,6 +250,72 @@
                     </p>
                 </div>
             </div>
+        </section>
+
+        <!-- СЕКЦИЯ 6: ПОДТВЕРЖДЕНИЕ ПРИСУТСТВИЯ -->
+        <section class="rsvp-section" id="rsvp">
+            <p class="section-subtitle">Ждём вашего ответа</p>
+            <h2>Подтверждение присутствия</h2>
+            <img class="divider" src="icons/divider.svg" />
+            <p class="rsvp-intro">
+                Пожалуйста, подтвердите ваше присутствие до 1 сентября. Спасибо!
+            </p>
+
+            <form class="rsvp-form" id="rsvp-form" novalidate>
+                <div class="rsvp-field">
+                    <label for="rsvp-name">Имя и фамилия</label>
+                    <input
+                        type="text"
+                        id="rsvp-name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    />
+                </div>
+
+                <fieldset class="rsvp-field rsvp-choice">
+                    <legend>Сможете ли вы присутствовать?</legend>
+                    <label class="rsvp-radio">
+                        <input
+                            type="radio"
+                            name="attendance"
+                            value="Да, с удовольствием!"
+                            required
+                        />
+                        <span>Да, с удовольствием!</span>
+                    </label>
+                    <label class="rsvp-radio">
+                        <input
+                            type="radio"
+                            name="attendance"
+                            value="К сожалению, не смогу."
+                        />
+                        <span>К сожалению, не смогу.</span>
+                    </label>
+                </fieldset>
+
+                <div class="rsvp-field">
+                    <label for="rsvp-comment">
+                        Пожелания, предпочтения по еде или комментарий
+                        <span class="rsvp-optional">(необязательно)</span>
+                    </label>
+                    <textarea
+                        id="rsvp-comment"
+                        class="rsvp-comment"
+                        name="comment"
+                        rows="3"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="rsvp-submit">Отправить</button>
+
+                <p
+                    class="rsvp-status"
+                    id="rsvp-status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+            </form>
         </section>
 
         <!-- ФУТЕР -->
