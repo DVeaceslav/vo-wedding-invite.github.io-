@@ -625,7 +625,7 @@ section.animate {
 }
 
 .rsvp-form {
-    max-width: 750px;
+    max-width: 650px;
     min-width: 300px;
     margin: 0 auto;
     background: var(--white);
