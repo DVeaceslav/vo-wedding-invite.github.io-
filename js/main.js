@@ -102,7 +102,6 @@ const RSVP_ACTION =
 const RSVP_ENTRIES = {
   name: "entry.772079551",
   attendance: "entry.1225112730",
-  comment: "entry.1770989343",
 };
 
 const rsvpForm = document.getElementById("rsvp-form");
@@ -127,7 +126,6 @@ if (rsvpForm) {
 
     const nameInput = rsvpForm.elements["name"];
     const attendance = rsvpForm.elements["attendance"];
-    const commentInput = rsvpForm.elements["comment"];
 
     const name = nameInput.value.trim();
     const attendanceValue = attendance.value;
@@ -151,7 +149,6 @@ if (rsvpForm) {
     const data = new FormData();
     data.append(RSVP_ENTRIES.name, name);
     data.append(RSVP_ENTRIES.attendance, attendanceValue);
-    data.append(RSVP_ENTRIES.comment, commentInput.value.trim());
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Отправляем…";

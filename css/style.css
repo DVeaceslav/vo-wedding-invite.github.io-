@@ -653,14 +653,6 @@ section.animate {
     margin-bottom: 0.6rem;
 }
 
-.rsvp-optional {
-    text-transform: none;
-    letter-spacing: 0;
-    font-weight: 300;
-    color: var(--gold);
-    margin-left: 3px;
-}
-
 .rsvp-field input[type="text"],
 .rsvp-field textarea {
     width: 100%;
@@ -690,7 +682,7 @@ section.animate {
 .rsvp-choice {
     display: flex;
     flex-direction: column;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 }
 
 .rsvp-radio {
@@ -723,11 +715,6 @@ section.animate {
 
 .rsvp-radio span {
     line-height: 1.4;
-}
-
-.rsvp-comment {
-    margin-top: 0.5rem;
-    margin-left: 0.2rem;
 }
 
 .rsvp-field.invalid input[type="text"],
